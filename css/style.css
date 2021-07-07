@@ -11474,7 +11474,7 @@ fieldset:disabled .btn {
 }
 
 body {
-  background: url("images/bg-space.jpg");
+  background: url("/images/bg-space.jpg");
   min-width: 100%;
   background-size: 100% 100%;
   background-repeat: repeat;
@@ -11647,7 +11647,7 @@ body {
 }
 
 .carousel-item {
-  background-image: url("images/carrousel1.jpg");
+  background-image: url("/images/carrousel1.jpg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -11655,11 +11655,11 @@ body {
 }
 
 .carousel__item--backgorund-img2 {
-  background-image: url("images/carrousel2.jpg");
+  background-image: url("/images/carrousel2.jpg");
 }
 
 .carousel__item--backgorund-img3 {
-  background-image: url("images/carrousel3.jpg");
+  background-image: url("/images/carrousel3.jpg");
 }
 
 .select-card {
