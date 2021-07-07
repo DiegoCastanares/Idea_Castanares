@@ -1,0 +1,53 @@
+.select-card {
+  cursor: pointer;
+
+  .select-card__title {
+    margin-bottom: 350px;
+    margin-top: 0;
+    font-size: 1.6rem;
+  }
+
+  .select-card__item {
+    position: absolute;
+    width: 10rem;
+    height: 14rem;
+    margin-right: 50px;
+  }
+
+  @for $i from 1 through 6 {
+    .select-card__item#{$i} {
+      margin-left: (30px * $i) - 60px;
+      border-radius: 4px;
+    }
+  }
+
+  @for $i from 1 through 6 {
+    .select-card__item#{$i}:hover {
+      transform: translate(0px, -20px);
+      border: solid 1px $principal-pink;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .select-card .select-card__item {
+    width: 11rem;
+    height: 15rem;
+  }
+
+  .select-card .select-card__title {
+    font-size: 2.2rem;
+  }
+
+  @for $i from 1 through 6 {
+    .select-card__item#{$i} {
+      rotate: (3deg * $i) - 9deg;
+    }
+  }
+
+  @for $i from 1 through 6 {
+    .select-card .select-card__item#{$i}:hover {
+      transform: translate(0px, -15px);
+    }
+  }
+}

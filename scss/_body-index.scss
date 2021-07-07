@@ -1,0 +1,32 @@
+.index__img {
+  opacity: 1;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  animation-duration: 2s;
+  animation-name: aparece;
+}
+
+@keyframes aparece {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.index__text {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 1.5rem;
+  color: $secondary-color;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .index__img {
+    width: 35%;
+    height: 35%;
+  }
+}

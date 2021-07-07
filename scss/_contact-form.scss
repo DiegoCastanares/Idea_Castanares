@@ -1,0 +1,34 @@
+.main-content__contact--width {
+  width: 90%;
+  margin-top: 20px;
+  margin: auto;
+}
+
+.input {
+  width: 90%;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  color: #f898cc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: auto;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  .input-group__label {
+    margin-bottom: 4px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-content__contact--width {
+    width: 60%;
+    margin: auto;
+  }
+}

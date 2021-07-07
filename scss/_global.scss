@@ -1,0 +1,71 @@
+$principal-pink: #f898cc;
+$secondary-color: #a6a1db;
+$button-color: #4d48af;
+$title-font: "Berkshire Swash", cursive;
+$text-font: "Raleway", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: url("/images/bg-space.jpg");
+  min-width: 100%;
+  background-size: 100% 100%;
+  background-repeat: repeat;
+}
+
+.main-content__title {
+  font-family: $title-font;
+  font-weight: normal;
+  font-size: 2rem;
+  margin: 1rem auto;
+  color: $secondary-color;
+  animation-duration: 2s;
+  animation-name: aparecer;
+}
+@media only screen and (min-width: 992px) {
+  .main-content__title {
+    font-size: 2.5rem;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.button--style {
+  text-decoration-style: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  background: $button-color;
+  margin: 15px;
+  border: solid 1px $principal-pink;
+  color: white;
+  width: 50%;
+}
+
+.button--style:hover {
+  color: $button-color;
+  border: solid 1px $button-color;
+}
+
+@media only screen and (min-width: 768px) {
+  .button--style {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .button--style {
+    width: 20%;
+  }
+}

@@ -1,0 +1,41 @@
+.tarot-cards__container {
+  background-color: transparent;
+  margin-top: 20px;
+
+  .tarot-cards__title {
+    color: $secondary-color;
+    font-family: $title-font;
+  }
+
+  .tarot-cards__text-container {
+    padding-bottom: 0;
+  }
+
+  .tarot-cards__text {
+    color: #fff;
+    font-family: $text-font;
+    text-align: center;
+  }
+
+  .tarot-cards__image--size {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .tarot-cards__button {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .tarot-cards__button {
+    width: 80%;
+  }
+}
+
+$card-bg: transparent;
