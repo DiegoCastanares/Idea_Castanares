@@ -11474,7 +11474,7 @@ fieldset:disabled .btn {
 }
 
 body {
-  background: url("../images/bg-space.jpg") !important;
+  background: url("../images/bg-space.jpg");
   min-width: 100%;
   background-size: 100% 100%;
   background-repeat: repeat;
