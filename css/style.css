@@ -11809,7 +11809,7 @@ body {
   margin: auto;
 }
 
-/* .input {
+.input {
   width: 90%;
   font-family: "Raleway", sans-serif;
   font-size: 0.8rem;
@@ -11828,7 +11828,7 @@ body {
       -ms-flex-align: stretch;
           align-items: stretch;
   margin: auto;
-} */
+}
 
 .input-group {
   display: -webkit-box;
