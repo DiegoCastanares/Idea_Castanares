@@ -1,4 +1,4 @@
-@import "../bootstrap/scss/bootstrap.scss";
+
 @import "global";
 @import "header";
 @import "body-index";
@@ -8,3 +8,4 @@
 @import "body-terapia_floral";
 @import "contact-form";
 @import "cards";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
