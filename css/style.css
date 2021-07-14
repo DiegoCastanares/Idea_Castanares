@@ -1,358 +1,4 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-body {
-  background: url("../images/bg-space.jpg");
-  background-size: 100% 100%;
-  background-repeat: repeat;
-}
-
-.main-content__title {
-  font-family: "Berkshire Swash", cursive;
-  font-weight: normal;
-  font-size: 2rem;
-  margin: 1rem auto;
-  color: #a6a1db;
-  animation-duration: 2s;
-  animation-name: aparecer;
-}
-
-@media only screen and (min-width: 992px) {
-  .main-content__title {
-    font-size: 2.5rem;
-  }
-}
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.button--style {
-  text-decoration-style: none;
-  font-family: "Raleway", sans-serif;
-  font-size: 0.8rem;
-  background: #4d48af;
-  margin: 15px;
-  border: solid 1px #f898cc;
-  color: white;
-  width: 150px;
-}
-
-.button--style:hover {
-  color: #4d48af;
-  border: solid 1px #4d48af;
-}
-
-@media only screen and (min-width: 768px) {
-  .button--style {
-    width: 30%;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .button--style {
-    width: 20%;
-  }
-}
-.main-nav {
-  border-bottom: solid 1px #f898cc;
-}
-.main-nav .main-nav__logo__logo-text {
-  font-family: "Berkshire Swash", cursive;
-  font-weight: normal;
-  font-size: 2.5rem;
-  color: #f898cc;
-  margin-top: 10px;
-}
-.main-nav .main-nav__list {
-  font-family: "Raleway", sans-serif;
-  font-weight: normal;
-  font-size: 0.8rem;
-  text-transform: capitalize;
-  color: white;
-}
-.main-nav :visited {
-  color: white;
-}
-.main-nav :hover {
-  color: #f898cc;
-}
-@media only screen and (min-width: 992px) {
-  .main-nav .main-nav__logo__logo-text {
-    font-size: 3.1rem;
-  }
-  .main-nav .main-nav__list {
-    font-size: 1rem;
-  }
-}
-
-.index__img {
-  opacity: 1;
-  width: 70%;
-  height: 70%;
-  margin: auto;
-  animation-duration: 2s;
-  animation-name: aparece;
-}
-
-@keyframes aparece {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.index__text {
-  font-family: "Berkshire Swash", cursive;
-  font-size: 1.5rem;
-  color: #a6a1db;
-  text-transform: capitalize;
-  text-align: center;
-}
-
-@media only screen and (min-width: 992px) {
-  .index__img {
-    width: 35%;
-    height: 35%;
-  }
-}
-.rrss-nav {
-  margin-top: 10px;
-  background-color: transparent;
-  border-top: solid 1px #f898cc;
-  margin: auto;
-}
-.rrss-nav .rrss-nav__list {
-  padding-left: 0;
-  list-style: none;
-}
-
-@media only screen and (min-width: 992px) {
-  .rrss-nav__tarot--position {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-}
-.carousel-item {
-  background-image: url("../images/carrousel1.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 70vh;
-}
-
-.carousel__item--backgorund-img2 {
-  background-image: url("../images/carrousel2.jpg");
-}
-
-.carousel__item--backgorund-img3 {
-  background-image: url("../images/carrousel3.jpg");
-}
-
-.select-card {
-  cursor: pointer;
-}
-.select-card .select-card__title {
-  margin-bottom: 350px;
-  margin-top: 0;
-  font-size: 1.6rem;
-}
-.select-card .select-card__item {
-  position: absolute;
-  width: 10rem;
-  height: 14rem;
-  margin-right: 50px;
-}
-.select-card .select-card__item1 {
-  margin-left: -30px;
-  border-radius: 4px;
-}
-.select-card .select-card__item2 {
-  margin-left: 0px;
-  border-radius: 4px;
-}
-.select-card .select-card__item3 {
-  margin-left: 30px;
-  border-radius: 4px;
-}
-.select-card .select-card__item4 {
-  margin-left: 60px;
-  border-radius: 4px;
-}
-.select-card .select-card__item5 {
-  margin-left: 90px;
-  border-radius: 4px;
-}
-.select-card .select-card__item6 {
-  margin-left: 120px;
-  border-radius: 4px;
-}
-.select-card .select-card__item1:hover {
-  transform: translate(0px, -20px);
-  border: solid 1px #f898cc;
-}
-.select-card .select-card__item2:hover {
-  transform: translate(0px, -20px);
-  border: solid 1px #f898cc;
-}
-.select-card .select-card__item3:hover {
-  transform: translate(0px, -20px);
-  border: solid 1px #f898cc;
-}
-.select-card .select-card__item4:hover {
-  transform: translate(0px, -20px);
-  border: solid 1px #f898cc;
-}
-.select-card .select-card__item5:hover {
-  transform: translate(0px, -20px);
-  border: solid 1px #f898cc;
-}
-.select-card .select-card__item6:hover {
-  transform: translate(0px, -20px);
-  border: solid 1px #f898cc;
-}
-
-@media only screen and (min-width: 992px) {
-  .select-card .select-card__item {
-    width: 11rem;
-    height: 15rem;
-  }
-
-  .select-card .select-card__title {
-    font-size: 2.2rem;
-  }
-
-  .select-card__item1 {
-    rotate: -6deg;
-  }
-
-  .select-card__item2 {
-    rotate: -3deg;
-  }
-
-  .select-card__item3 {
-    rotate: 0deg;
-  }
-
-  .select-card__item4 {
-    rotate: 3deg;
-  }
-
-  .select-card__item5 {
-    rotate: 6deg;
-  }
-
-  .select-card__item6 {
-    rotate: 9deg;
-  }
-
-  .select-card .select-card__item1:hover {
-    transform: translate(0px, -15px);
-  }
-
-  .select-card .select-card__item2:hover {
-    transform: translate(0px, -15px);
-  }
-
-  .select-card .select-card__item3:hover {
-    transform: translate(0px, -15px);
-  }
-
-  .select-card .select-card__item4:hover {
-    transform: translate(0px, -15px);
-  }
-
-  .select-card .select-card__item5:hover {
-    transform: translate(0px, -15px);
-  }
-
-  .select-card .select-card__item6:hover {
-    transform: translate(0px, -15px);
-  }
-}
-@media only screen and (min-width: 992px) {
-  .main-content .main-content__image {
-    margin-left: 20px;
-    max-height: 90vh;
-  }
-}
-.main-content__contact--width {
-  width: 90%;
-  margin-top: 20px;
-  margin: auto;
-}
-
-.input {
-  width: 90%;
-  font-family: "Raleway", sans-serif;
-  font-size: 0.8rem;
-  color: #f898cc;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  margin: auto;
-}
-
-.input-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-.input-group .input-group__label {
-  margin-bottom: 4px;
-}
-
-@media only screen and (min-width: 992px) {
-  .main-content__contact--width {
-    width: 60%;
-    margin: auto;
-  }
-}
-.tarot-cards__container {
-  background-color: transparent;
-  margin-top: 20px;
-}
-.tarot-cards__container .tarot-cards__title {
-  color: #a6a1db;
-  font-family: "Berkshire Swash", cursive;
-}
-.tarot-cards__container .tarot-cards__text-container {
-  padding-bottom: 0;
-}
-.tarot-cards__container .tarot-cards__text {
-  color: #fff;
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-}
-.tarot-cards__container .tarot-cards__image--size {
-  height: 100%;
-  width: 100%;
-  border-radius: 15px;
-}
-.tarot-cards__container .tarot-cards__button {
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-}
-
-@media only screen and (min-width: 992px) {
-  .tarot-cards__button {
-    width: 80%;
-  }
-}
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -4565,7 +4211,7 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: transparent;
+  background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -4642,10 +4288,6 @@ textarea.form-control-lg {
   margin-bottom: -0.5rem;
   margin-left: -0.5rem;
   border-bottom: 0;
-}
-.card-header-tabs .nav-link.active {
-  background-color: transparent;
-  border-bottom-color: transparent;
 }
 
 .card-header-pills {
@@ -11102,6 +10744,467 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: url("../images/bg-space.jpg");
+  background-size: 100% 100%;
+  background-repeat: repeat;
+}
+
+.main-content__title {
+  font-family: "Berkshire Swash", cursive;
+  font-weight: normal;
+  font-size: 2rem;
+  margin: 1rem auto;
+  color: #a6a1db;
+  animation-duration: 2s;
+  animation-name: aparecer;
+}
+
+@media only screen and (min-width: 992px) {
+  .main-content__title {
+    font-size: 2.5rem;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.button--style {
+  text-decoration-style: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  background: #4d48af;
+  margin: 15px;
+  border: solid 1px #f898cc;
+  color: white;
+  width: 150px;
+}
+
+.button--style:hover {
+  color: #4d48af;
+  border: solid 1px #4d48af;
+}
+
+@media only screen and (min-width: 768px) {
+  .button--style {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .button--style {
+    width: 20%;
+  }
+}
+.main-nav {
+  border-bottom: solid 1px #f898cc;
+}
+.main-nav .main-nav__logo__logo-text {
+  font-family: "Berkshire Swash", cursive;
+  font-weight: normal;
+  font-size: 2.5rem;
+  color: #f898cc;
+  margin-top: 10px;
+  text-decoration: none;
+}
+@media only screen and (min-width: 992px) {
+  .main-nav .main-nav__logo__logo-text {
+    font-size: 3.1rem;
+  }
+}
+
+.icon {
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: -2.7rem;
+  left: 1rem;
+}
+
+.toggle {
+  display: none;
+}
+
+.hamburguer {
+  display: block;
+  width: 1.5rem;
+  height: 0.3rem;
+  background: white;
+  position: absolute;
+  top: 0.6rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 0.3rem;
+  background: white;
+  position: absolute;
+  top: -0.6rem;
+  transition: inherit;
+}
+
+.hamburguer:after {
+  top: 0.6rem;
+}
+
+.toggle:checked + .icon > .hamburguer {
+  background: #f898cc;
+  transform: rotate(45deg);
+}
+
+.toggle:checked + .icon > .hamburguer:before {
+  background: #f898cc;
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.toggle:checked + .icon > .hamburguer:after {
+  background: #f898cc;
+  top: 0;
+  transform: rotate(90deg);
+}
+
+nav {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: spance-betweeen;
+  align-items: center;
+  transition: all 1s ease;
+  position: relative;
+}
+
+.menu {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.menu__item {
+  flex: auto;
+  list-style: none;
+}
+
+.menu__link {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  flex: auto;
+}
+
+.menu__link:hover {
+  color: #f898cc;
+}
+
+@media only screen and (max-width: 600px) {
+  .icon {
+    display: inline-block;
+  }
+
+  nav {
+    padding: 0.4rem;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+  }
+
+  .menu__item {
+    width: 100%;
+  }
+
+  .menu, .menu__link {
+    width: 100%;
+  }
+
+  .toggle:checked ~ .menu {
+    display: block;
+  }
+}
+.index__img {
+  opacity: 1;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  animation-duration: 2s;
+  animation-name: aparece;
+}
+
+@keyframes aparece {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.index__text {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 1.5rem;
+  color: #a6a1db;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .index__img {
+    width: 35%;
+    height: 35%;
+  }
+}
+.rrss-nav {
+  margin-top: 10px;
+  background-color: transparent;
+  border-top: solid 1px #f898cc;
+  margin: auto;
+}
+.rrss-nav .rrss-nav__list {
+  padding-left: 0;
+  list-style: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .rrss-nav__tarot--position {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+.carousel-item {
+  background-image: url("../images/carrousel1.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+}
+
+.carousel__item--backgorund-img2 {
+  background-image: url("../images/carrousel2.jpg");
+}
+
+.carousel__item--backgorund-img3 {
+  background-image: url("../images/carrousel3.jpg");
+}
+
+.select-card {
+  cursor: pointer;
+}
+.select-card .select-card__title {
+  margin-bottom: 350px;
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+.select-card .select-card__item {
+  position: absolute;
+  width: 10rem;
+  height: 14rem;
+  margin-right: 50px;
+}
+.select-card .select-card__item1 {
+  margin-left: -30px;
+  border-radius: 4px;
+}
+.select-card .select-card__item2 {
+  margin-left: 0px;
+  border-radius: 4px;
+}
+.select-card .select-card__item3 {
+  margin-left: 30px;
+  border-radius: 4px;
+}
+.select-card .select-card__item4 {
+  margin-left: 60px;
+  border-radius: 4px;
+}
+.select-card .select-card__item5 {
+  margin-left: 90px;
+  border-radius: 4px;
+}
+.select-card .select-card__item6 {
+  margin-left: 120px;
+  border-radius: 4px;
+}
+.select-card .select-card__item1:hover {
+  transform: translate(0px, -20px);
+  border: solid 1px #f898cc;
+}
+.select-card .select-card__item2:hover {
+  transform: translate(0px, -20px);
+  border: solid 1px #f898cc;
+}
+.select-card .select-card__item3:hover {
+  transform: translate(0px, -20px);
+  border: solid 1px #f898cc;
+}
+.select-card .select-card__item4:hover {
+  transform: translate(0px, -20px);
+  border: solid 1px #f898cc;
+}
+.select-card .select-card__item5:hover {
+  transform: translate(0px, -20px);
+  border: solid 1px #f898cc;
+}
+.select-card .select-card__item6:hover {
+  transform: translate(0px, -20px);
+  border: solid 1px #f898cc;
+}
+
+@media only screen and (min-width: 992px) {
+  .select-card .select-card__item {
+    width: 11rem;
+    height: 15rem;
+  }
+
+  .select-card .select-card__title {
+    font-size: 2.2rem;
+  }
+
+  .select-card__item1 {
+    rotate: -6deg;
+  }
+
+  .select-card__item2 {
+    rotate: -3deg;
+  }
+
+  .select-card__item3 {
+    rotate: 0deg;
+  }
+
+  .select-card__item4 {
+    rotate: 3deg;
+  }
+
+  .select-card__item5 {
+    rotate: 6deg;
+  }
+
+  .select-card__item6 {
+    rotate: 9deg;
+  }
+
+  .select-card .select-card__item1:hover {
+    transform: translate(0px, -15px);
+  }
+
+  .select-card .select-card__item2:hover {
+    transform: translate(0px, -15px);
+  }
+
+  .select-card .select-card__item3:hover {
+    transform: translate(0px, -15px);
+  }
+
+  .select-card .select-card__item4:hover {
+    transform: translate(0px, -15px);
+  }
+
+  .select-card .select-card__item5:hover {
+    transform: translate(0px, -15px);
+  }
+
+  .select-card .select-card__item6:hover {
+    transform: translate(0px, -15px);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main-content .main-content__image {
+    margin-left: 20px;
+    max-height: 90vh;
+  }
+}
+.main-content__contact--width {
+  width: 90%;
+  margin-top: 20px;
+  margin: auto;
+}
+
+.input {
+  width: 90%;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  color: #f898cc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: auto;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.input-group .input-group__label {
+  margin-bottom: 4px;
+}
+
+@media only screen and (min-width: 992px) {
+  .main-content__contact--width {
+    width: 60%;
+    margin: auto;
+  }
+}
+.tarot-cards__container {
+  background-color: transparent;
+  margin-top: 20px;
+}
+.tarot-cards__container .tarot-cards__title {
+  color: #a6a1db;
+  font-family: "Berkshire Swash", cursive;
+}
+.tarot-cards__container .tarot-cards__text-container {
+  padding-bottom: 0;
+}
+.tarot-cards__container .tarot-cards__text {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+.tarot-cards__container .tarot-cards__image--size {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+.tarot-cards__container .tarot-cards__button {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+
+@media only screen and (min-width: 992px) {
+  .tarot-cards__button {
+    width: 80%;
   }
 }
 

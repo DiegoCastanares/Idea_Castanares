@@ -1,5 +1,8 @@
+$nav-link-color: white;
+
 .main-nav {
   border-bottom: solid 1px $principal-pink;
+ 
 
   .main-nav__logo__logo-text {
     font-family: $title-font;
@@ -7,31 +10,136 @@
     font-size: 2.5rem;
     color: $principal-pink;
     margin-top: 10px;
-  }
-
-  .main-nav__list {
-    font-family: "Raleway", sans-serif;
-    font-weight: normal;
-    font-size: 0.8rem;
-    text-transform: capitalize;
-    color: white;
-  }
-
-  :visited {
-    color: white;
-  }
-
-  :hover {
-    color: $principal-pink;
+    text-decoration: none;
   }
 
   @media only screen and (min-width: 992px) {
     .main-nav__logo__logo-text {
       font-size: 3.1rem;
     }
+  }}
 
-    .main-nav__list {
-      font-size: 1rem;
-    }
-  }
+.icon {
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: -2.7rem;
+  left: 1rem;
 }
+
+.toggle {
+  display: none;
+}
+
+.hamburguer {
+  display: block;
+  width: 1.5rem;
+  height: .3rem;
+  background: $nav-link-color;
+  position: absolute;
+  top: .6rem;
+  transition: all .3s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 0.3rem;
+  background: $nav-link-color;
+  position: absolute;
+  top: -0.6rem;
+  transition: inherit;
+}
+
+.hamburguer:after {
+  top: .6rem;
+}
+
+.toggle:checked + .icon>.hamburguer {
+  background: $principal-pink;
+  transform: rotate(45deg);
+}
+
+.toggle:checked + .icon>.hamburguer:before {
+  background: $principal-pink;
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.toggle:checked + .icon>.hamburguer:after {
+  background: $principal-pink;
+  top: 0;
+  transform: rotate(90deg);
+}
+
+nav {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: spance-betweeen;
+  align-items: center;
+  transition: all 1s ease;
+  position: relative;
+}
+
+.menu {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.menu__item {
+  flex: auto;
+  list-style: none;
+}
+
+.menu__link {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: $nav-link-color;
+  text-decoration: none;
+  flex: auto;
+}
+
+.menu__link:hover {
+  color: $principal-pink;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .icon {
+    display: inline-block;
+  }
+  
+  nav {
+    padding: 0.4rem;
+  }
+  
+  .menu {
+    display: none;
+    width: 100%;
+  }
+  
+  .menu__item {
+    width: 100%;
+  }
+  
+  .menu, .menu__link {
+    width: 100%;
+  }
+  
+  .toggle:checked ~ .menu {
+    display: block;
+  }}
