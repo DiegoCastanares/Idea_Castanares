@@ -1,0 +1,24 @@
+{
+  "name": "idea_castanares",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "diegoSass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoCastanares/Idea_Castanares.git"
+  },
+  "author": "Diego",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiegoCastanares/Idea_Castanares/issues"
+  },
+  "homepage": "https://github.com/DiegoCastanares/Idea_Castanares#readme"
+}
