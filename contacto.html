@@ -38,16 +38,28 @@
       </div>
       <div class="container">
         <nav>
-          <input type="checkbox" id="toggle" class="toggle">
+          <input type="checkbox" id="toggle" class="toggle" />
           <label for="toggle" class="icon">
             <span class="hamburguer"></span>
           </label>
           <ul class="menu">
-            <li class="menu__item"><a href="./index.html" class="menu__link">Inicio</a></li>
-            <li class="menu__item"><a href="./tarot.html" class="menu__link">Tarot</a></li>
-            <li class="menu__item"><a href="./astrologia.html" class="menu__link">Astrología</a></li>
-            <li class="menu__item"><a href="./terapia-floral.html" class="menu__link">Terapia Floral</a></li>
-            <li class="menu__item"><a href="./contacto.html" class="menu__link">Contacto</a></li>
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Inicio</a>
+            </li>
+            <li class="menu__item">
+              <a href="./tarot.html" class="menu__link">Tarot</a>
+            </li>
+            <li class="menu__item">
+              <a href="./astrologia.html" class="menu__link">Astrología</a>
+            </li>
+            <li class="menu__item">
+              <a href="./terapia-floral.html" class="menu__link"
+                >Terapia Floral</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="./contacto.html" class="menu__link">Contacto</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -72,8 +84,8 @@
           </div>
           <form class="input" action="" method="POST" alt="ingreso de datos">
             <div class="input-group">
-              <label for="nombre"></label>
               <input
+                class="input-text"
                 type="text"
                 id="nombre"
                 name="nombre"
@@ -82,8 +94,8 @@
               />
             </div>
             <div class="input-group">
-              <label for="telefono" class="input-group__label"></label>
               <input
+                class="input-text"
                 type="text"
                 id="telefono"
                 name="telefono"
@@ -92,8 +104,8 @@
               />
             </div>
             <div class="input-group">
-              <label for="mail" class="input-group__label"></label> <br />
               <input
+                class="input-text"
                 type="text"
                 id="mail"
                 name="mail"
@@ -102,22 +114,19 @@
               />
             </div>
             <div class="input-group">
-              <label for="consulta" class="input-group__label"
-                ></label
-              >
-              <select name="consulta" id="consulta">
+              <select name="consulta" id="consulta" class="input-text">
                 <option value="seleccion">Que sesión te interesa?</option>
                 <option value="tarot">Tarot</option>
-                <option value="astrologia">Astrologia</option>
+                <option value="astrologia">Astrología</option>
                 <option value="flores">Terapia Floral</option>
                 <option value="otras">Otras consultas</option>
               </select>
             </div>
-            <label for="mensaje" class="input-group__label"></label>
             <textarea
+              class="input-text"
               name="mensaje"
               id="mensaje"
-              cols="30"
+              cols="20"
               rows="10"
               placeholder="Escribi aca tu mensaje"
             ></textarea>

@@ -11148,22 +11148,25 @@ nav {
 .input {
   width: 90%;
   font-family: "Raleway", sans-serif;
-  font-size: 0.8rem;
   color: #f898cc;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
   margin: auto;
+  padding: 3%;
+  font-size: 0.9rem;
 }
-
-.input-group {
+.input .input-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 3%;
 }
-.input-group .input-group__label {
-  margin-bottom: 4px;
+.input .input-text {
+  font-family: "Raleway", sans-serif;
+  padding: 1.5%;
+  border-radius: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 @media only screen and (min-width: 992px) {
