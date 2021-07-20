@@ -10808,6 +10808,11 @@ body {
     width: 250px;
   }
 }
+.breadcrumb {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+}
+
 .main-nav {
   border-bottom: solid 1px #f898cc;
 }
@@ -11052,27 +11057,27 @@ nav {
 }
 .select-card .select-card__item1:hover {
   transform: translate(0px, -20px);
-  border: solid 1px #f898cc;
+  border: solid 2px #f898cc;
 }
 .select-card .select-card__item2:hover {
   transform: translate(0px, -20px);
-  border: solid 1px #f898cc;
+  border: solid 2px #f898cc;
 }
 .select-card .select-card__item3:hover {
   transform: translate(0px, -20px);
-  border: solid 1px #f898cc;
+  border: solid 2px #f898cc;
 }
 .select-card .select-card__item4:hover {
   transform: translate(0px, -20px);
-  border: solid 1px #f898cc;
+  border: solid 2px #f898cc;
 }
 .select-card .select-card__item5:hover {
   transform: translate(0px, -20px);
-  border: solid 1px #f898cc;
+  border: solid 2px #f898cc;
 }
 .select-card .select-card__item6:hover {
   transform: translate(0px, -20px);
-  border: solid 1px #f898cc;
+  border: solid 2px #f898cc;
 }
 
 @media only screen and (min-width: 992px) {
