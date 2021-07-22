@@ -1,15 +1,9 @@
-.carousel-item {
-  background-image: url("../images/carrousel1.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 70vh;
+.img-fluid {
+  opacity: 0.75;
 }
 
-.carousel__item--backgorund-img2 {
-  background-image: url("../images/carrousel2.jpg");
-}
-
-.carousel__item--backgorund-img3 {
-  background-image: url("../images/carrousel3.jpg");
+@media only screen and (min-width: 992px) {
+  .carousel-item {
+    height: 40vh;
+  }
 }
