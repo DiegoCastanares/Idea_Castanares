@@ -11155,29 +11155,10 @@ body {
   }
 }
 
-.breadcrumb {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.6rem;
-}
+/*!
+* ESTILOS DE HEADER
+*/
 
-.copyright {
-  font-family: "Raleway", sans-serif;
-  color: white;
-  font-size: 0.6rem;
-  width: max-content;
-  justify-items: center;
-  padding: 0.4rem;
-}
-
-@media only screen and (min-width: 992px) {
-  .breadcrumb {
-    font-size: 0.8rem;
-  }
-
-  .copyright {
-    font-size: 0.8rem;
-  }
-}
 .main-nav {
   border-bottom: solid 1px #f898cc;
 }
@@ -11194,6 +11175,10 @@ body {
     font-size: 3.1rem;
   }
 }
+
+/*!
+* ESTILOS DE MENU HAMBURGUESA Y NAVBAR
+*/
 
 .icon {
   display: none;
@@ -11318,6 +11303,11 @@ nav {
     display: block;
   }
 }
+
+/*!
+* ESTILOS DEL HOME
+*/
+
 .index__img {
   opacity: 1;
   width: 70%;
@@ -11349,6 +11339,11 @@ nav {
     height: 35%;
   }
 }
+
+/*!
+* ESTILOS DEL FOOTER
+*/
+
 .rrss-nav {
   margin-top: 10px;
   background-color: transparent;
@@ -11360,13 +11355,34 @@ nav {
   list-style: none;
 }
 
+.breadcrumb {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.6rem;
+}
+
+.copyright {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 0.6rem;
+  width: max-content;
+  justify-items: center;
+  padding: 0.4rem;
+}
+
 @media only screen and (min-width: 992px) {
-  .rrss-nav__tarot--position {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  .breadcrumb {
+    font-size: 0.8rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
   }
 }
+
+/*!
+* ESTILOS DE ASTROLOGIA Y CAROUSEL
+*/
+
 .img-fluid {
   opacity: 0.75;
 }
@@ -11380,6 +11396,11 @@ nav {
     height: 40vh;
   }
 }
+
+/*!
+* ESTILOS DE TAROT Y SELECTOR DE CARTAS
+*/
+
 .select-card {
   cursor: pointer;
 }
@@ -11500,12 +11521,22 @@ nav {
     transform: translate(0px, -15px);
   }
 }
+
+/*!
+* ESTILOS DE TERAPIA FLORAL
+*/
+
 @media only screen and (min-width: 992px) {
   .main-content .main-content__image {
     margin-left: 20px;
     max-height: 90vh;
   }
 }
+
+/*!
+* ESTILOS DE FORMULARIO DE CONTACTO
+*/
+
 .main-content__contact--width {
   width: 90%;
   margin-top: 20px;
@@ -11542,6 +11573,11 @@ nav {
     margin: auto;
   }
 }
+
+/*!
+* ESTILOS DE TEMPLATES DE CARTAS DE TAROT
+*/
+
 .tarot-cards__container {
   background-color: transparent;
   margin-top: 20px;
