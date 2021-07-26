@@ -10755,7 +10755,7 @@ textarea.form-control-lg {
 
 body {
   background: url("../images/bg-space.jpg");
-  background-size: 100% 100%;
+  background-size: 100%;
   background-repeat: repeat;
 }
 
@@ -10810,9 +10810,27 @@ body {
 }
 .breadcrumb {
   font-family: "Raleway", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
 }
 
+.copyright {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 0.6rem;
+  width: max-content;
+  justify-items: center;
+  padding: 0.4rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .breadcrumb {
+    font-size: 0.8rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+}
 .main-nav {
   border-bottom: solid 1px #f898cc;
 }
@@ -10944,7 +10962,8 @@ nav {
     width: 100%;
   }
 
-  .menu, .menu__link {
+  .menu,
+.menu__link {
     width: 100%;
   }
 
@@ -10971,8 +10990,8 @@ nav {
 }
 .index__text {
   font-family: "Berkshire Swash", cursive;
-  font-size: 1.5rem;
   color: #a6a1db;
+  font-size: 1.5rem;
   text-transform: capitalize;
   text-align: center;
 }
@@ -11005,6 +11024,10 @@ nav {
   opacity: 0.75;
 }
 
+.carousel-text {
+  font-family: "Raleway", sans-serif;
+}
+
 @media only screen and (min-width: 992px) {
   .carousel-item {
     height: 40vh;
@@ -11015,7 +11038,6 @@ nav {
 }
 .select-card .select-card__title {
   margin-bottom: 350px;
-  margin-top: 0;
   font-size: 1.6rem;
 }
 .select-card .select-card__item {
@@ -11164,7 +11186,7 @@ nav {
   font-family: "Raleway", sans-serif;
   padding: 1.2%;
   border-radius: 0.25rem;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.65);
 }
 
 @media only screen and (min-width: 992px) {

@@ -17,9 +17,9 @@
 }
 
 .index__text {
-  font-family: "Berkshire Swash", cursive;
-  font-size: 1.5rem;
+  font-family: $title-font;
   color: $secondary-color;
+  font-size: 1.5rem;
   text-transform: capitalize;
   text-align: center;
 }

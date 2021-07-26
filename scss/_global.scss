@@ -13,7 +13,7 @@ $text-font: "Raleway", sans-serif;
 
 body {
   background: url("../images/bg-space.jpg");
-  background-size: 100% 100%;
+  background-size: 100%;
   background-repeat: repeat;
 }
 
@@ -26,6 +26,7 @@ body {
   animation-duration: 2s;
   animation-name: aparecer;
 }
+
 @media only screen and (min-width: 992px) {
   .main-content__title {
     font-size: 2.5rem;
@@ -43,7 +44,7 @@ body {
 
 .button--style {
   text-decoration-style: none;
-  font-family: "Raleway", sans-serif;
+  font-family: $text-font;
   font-size: 0.8rem;
   background: $button-color;
   margin: 15px;
@@ -70,6 +71,24 @@ body {
 }
 
 .breadcrumb {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.9rem;
+  font-family: $text-font;
+  font-size: 0.6rem;
+}
+
+.copyright {
+  font-family: $text-font;
+  color: white;
+  font-size: 0.6rem;
+  width: max-content;
+  justify-items: center;
+  padding: 0.4rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .breadcrumb {
+    font-size: 0.8rem;
+  }
+  .copyright {
+    font-size: 0.8rem;
+  }
 }
