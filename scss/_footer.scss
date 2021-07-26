@@ -17,3 +17,26 @@
     width: 100%;
   }
 }
+
+.breadcrumb {
+  font-family: $text-font;
+  font-size: 0.6rem;
+}
+
+.copyright {
+  font-family: $text-font;
+  color: white;
+  font-size: 0.6rem;
+  width: max-content;
+  justify-items: center;
+  padding: 0.4rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .breadcrumb {
+    font-size: 0.8rem;
+  }
+  .copyright {
+    font-size: 0.8rem;
+  }
+}
