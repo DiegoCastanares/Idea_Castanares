@@ -10910,7 +10910,7 @@ nav {
   background: transparent;
   display: flex;
   flex-wrap: wrap;
-  justify-content: spance-betweeen;
+  justify-content: space-between;
   align-items: center;
   transition: all 1s ease;
   position: relative;
